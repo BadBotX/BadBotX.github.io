@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Lizhou Xu</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <br />
+        <p><img src="https://BadBotX.github.io/assets/img_myself.jpg" width="250" style="height: auto;"/></p>
+        <h1>Lizhou Xu</h1>
+        <p>
+          <a href="mailto:lizhou.xu@outlook.com">lizhou.xu@outlook.com</a><br />
+        </p>
+        <p></p>
+        <p>
+          PhD<br />
+          Industrial Robotics Facility<br />
+          University of Genoa and Istituto Italiano di Tecnologia<br />
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/lizhou-xu"><img src="https://BadBotX.github.io/assets/linkedin.png" width="22"  style="vertical-align:middle" border="0">LinkedIn</a><br />
+        </p>
+      </header>
+
+      <section>
+        <p><a name="About Me"></a></p>
+        <h2>About Me</h2>
+        <p>I earned my PhD in Robotics from the University of Genoa and Istituto Italiano di Tecnologia, where I specialized in advanced control systems, including motion control/planning, force control, and admittance/impedance control. My primary interest lies in integrating AI techniques with robotics. Before starting my PhD, I worked as a Robotics Engineer at Shanghai-FANUC Robotics, focusing on developing, debugging, and testing software for FANUC systems and integrating third-party software and hardware.</p>
+      </section>
+
+      <section>
+        <p><a name="Experience"></a></p>
+        <h2>Experience</h2>
+
+        <div>
+            <h3>Reinforcement Learning for Force-Sensitive Assembly</h3>
+            <div>
+                <img src="https://BadBotX.github.io/assets/pih_sim.png" alt="Graph 1" style="max-width:40%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/pih_real.JPG" alt="Graph 2" style="max-width:40%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/bl_sim.jpg" alt="Graph 3" style="max-width:40%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/bl_real.jpg" alt="Graph 4" style="max-width:40%; height:auto; display:inline-block; margin-right: 10px;">
+            </div>
+            <p>An RL-based admittance controller was designed, trained, and tested in both simulation and real-world scenarios. The controller was applied to peg-in-hole (PiH) and belt looping (BL) tasks, with customized reward designs aimed at enhancing performance by mitigating the complexities arising from uncertainties in position and force/torque sensor feedback.</p>
+        </div>
+
+        <div>
+            <h3>Multi-objective Reinforcement Learning Model to Improve the Performance of Peg-in-Hole and Belt Loop</h3>
+            <div>
+                <video autoplay loop muted style="width: 60%; height: auto; display: block; margin: 0 auto;">
+                    <source src="https://BadBotX.github.io/assets/pareto_evolution.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>This video shows the iterative training process of a Multi-objective Reinforcement Learning (MORL) model, developed to enhance the performance of a PiH and BL task. The training focuses on two key objectives: minimizing position deviation and reducing contact force. This approach is particularly useful when the task involves multiple uncertainties from different sources, such as position uncertainties due to gripper finger deflection (3D printed) and noise from the internal force/torque sensor. Through multiple iterations, the model learns to optimize these conflicting objectives, improving the efficiency of the assembly task.</p>
+        </div>
+
+        <div>
+            <h3>Robotic Assembly Framework for High-Mix-Low-Volume Manufacturing</h3>
+            <div>
+                <img src="https://BadBotX.github.io/assets/wrs_flow.png" alt="Graph 5" style="max-width:75%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/experimental_setup.jpg" alt="Graph 6" style="max-width:45%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/wrist_exploded_view.png" alt="Graph 7" style="max-width:30%; height:auto; display:inline-block;">
+            </div>
+            <p>The system is lightweight, quickly deployable, and easily replicable. It utilized two Universal Robots, with an RGB-D camera mounted on the robot's wrist to detect the position and orientation of various objects. Additionally, a custom gripping system was employed, featuring 3D printed fingers for manipulation and miniature force sensors for grasping detection.</p>
+        </div>
+
+        <div>
+            <h3>Autonomous Sewing in SOFTMANBOT</h3>
+            <div>
+                <img src="https://BadBotX.github.io/assets/smb_workcell.jpg" alt="Graph 8" style="max-width:24.2%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/smb_wrinkle_remove.jpg" alt="Graph 9" style="max-width:45%; height:auto; display:inline-block;">
+            </div>
+            <p>This work focused on learning from professional human workers to effectively remove wrinkles during the sewing process. The learned agent was capable of generating a discrete action sequence to execute the wrinkle removal, closely mimicking the techniques used by skilled humans.</p>
+        </div>
+
+        <div>
+            <h3>Gait Planning for Hexapod Robots</h3>
+            <div>
+                <img src="https://BadBotX.github.io/assets/hexbot_wave.png" alt="Graph 10" style="max-width:45%; height:auto; display:inline-block; margin-right: 10px;">
+                <img src="https://BadBotX.github.io/assets/hexbot_gait.jpeg" alt="Graph 11" style="max-width:30%; height:auto; display:inline-block;">
+            </div>
+            <p>A CPG network utilizing six Matsuoka oscillators is designed to control the hexapod's hip joint angles. The CPG-based strategy was first validated through simulations using ADAMS software and then implemented and tested in practical experiments with a hexapod robot.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <p><a name="Programming Skills"></a></p>
+        <h2>Programming Skills</h2>
+        <div class="skills-icons">
+            <img src="https://BadBotX.github.io/assets/python_icon.png" width="50" height="50">
+            <img src="https://BadBotX.github.io/assets/cpp_icon.png" width="50" height="50">
+            <img src="https://BadBotX.github.io/assets/csharp_icon.png" width="60" height="50">
+            <img src="https://BadBotX.github.io/assets/matlab_icon.jpeg" width="80" height="50">
+            <img src="https://BadBotX.github.io/assets/latex_icon.png" width="80" height="50">
+        </div>
+      </section>
+      
+      <section>
+        <p><a name="Hands-On Experience"></a></p>
+        <h2>Hands-On Experience</h2>
+        <div class="hands-on experience">
+            <ul>
+                <li><strong>Robot Platform:</strong> UR5 and UR5e, FANUC CR series, FANUC M series, FANUC R series</li>
+                <li><strong>Sensor:</strong> Intel RealSense D400 series, Basler ace series, SingleTact miniature force sensors</li>
+                <li><strong>Embedded Computer:</strong> Raspberry Pi, Arduino, STM32/64</li>
+                <li><strong>Actuator:</strong> MAXON Servo motors, Stepper motors...</li>                
+            </ul>
+        </div>
+      </section>
+
+      <section>
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=m&d=3zzSYBdX65l_2X1gY9-Mm2pOu0ZhRTB8zrQwmd1FCTM&cl=ffffff&w=a"></script>
+      </section>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
